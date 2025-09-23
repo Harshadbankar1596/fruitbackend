@@ -184,7 +184,8 @@ exports.getAllOrders = async (req, res) => {
 // Get single order
 exports.getOrderById = async (req, res) => {
   try {
-    const order = await Order.findById(req.params.id)
+    const user = req.params.id
+    const order = await Order.find({ userId: user })
       .populate('product')
       .populate('address');
 

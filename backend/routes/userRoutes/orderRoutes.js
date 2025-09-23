@@ -25,6 +25,7 @@ const router = express.Router();
 router.post('/create', createOrder);
 router.get('/all', getAllOrders);
 router.get('/:id', getOrderById);
+// /api/v1/user/order
 router.put('/:id', updateOrder);
 router.delete('/:id', deleteOrder);
 // In your routes file

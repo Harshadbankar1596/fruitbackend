@@ -9,5 +9,4 @@ router.post('/create',upload.fields([ { name: 'categoryImage', maxCount: 1 },{ n
 router.get('/all', getCategoriesWithSubcategories);
 
 
-
 module.exports = router;
